@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -7,7 +7,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="an"nymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 	</head>
 <body>
 	<!-- navigation bar -->
@@ -27,7 +27,7 @@
       <a class="nav-link" href="#">About</a>
   		</li>
       <li class="nav-item">
-      <a class="nav-link" href="#registration">Registration</a>
+      <a class="nav-link" href="#">Registration</a>
   		</li>
    		<li class="nav-item">
       <a class="nav-link" href="#contact_us">Contact Us</a>
@@ -46,17 +46,17 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="img/slide1.jpg" alt="First slide">
+      <img class="d-block w-100" src="{% static 'images/slide1.jpg' %}" alt="First slide">
       <div class="carousel-caption">
       	<h1 class="display-2">Gec Alumni Portal</h1>
       	<button type="button" class="btn btn-outline-light btn-lg">REGISTER NOW</button>
     </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="img/college1.jpg" alt="Second slide">
+      <img class="d-block w-100" src="{% static 'images/college1.jpg' %}" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="img/invento.jpg" alt="Third slide">
+      <img class="d-block w-100" src="{% static 'images/invento.jpg' %}" alt="Third slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
@@ -89,7 +89,7 @@
 	</div>
 	<br>
 	<div class="col-lg-6">
-		<img src="img/night.JPG" class="img-fluid">
+		<img src="{% static 'images/night.JPG' %}" class="img-fluid">
 	</div>
 	</div>
 </div>
@@ -106,7 +106,7 @@
 	</div>
 	<div class="row padding">
 	<div class="col-md-12 col-lg-6">
-	<a href="#"><img src=img/reg.jpg class="img-fluid"></a>
+	<a href="#"><img src="{% static 'images/reg.jpg' %}" class="img-fluid"></a>
 	<br>
 	</div>
 	<div class="col-lg-6">
@@ -137,7 +137,7 @@
 	</div>
 <br>
 	<div class="col-lg-6">
-		<img src="img/2.jpg" class="img-fluid">
+		<img src="{% static 'images/2.jpg' %}" class="img-fluid">
 	</div>
 	</div>
 </div>
@@ -152,14 +152,14 @@
 </div>
 <div class="row padding">
 	<div class="col-md-12 col-lg-6">
-	<a href="#"><img src=img/eterno.jpg class="img-fluid"></a>
+	<a href="#"><img src="{% static 'images/eterno.jpg' %}" class="img-fluid"></a>
 	<br>
 	</div>
 	<div class="col-lg-6">
-		
+
 			<p class="lead">Eterno is the Annual Alumni meet conducted at GEC Sreekrishnapurm. It provides a platform for Alumnis of the college to relive their memories and interact with the students and staff of GEC. They could involve in many activities and share their valuable experiences and contributions for the excel of our College.Nothing can replace the suport provided to the institution by the alumnis.We expect all kind of support from our alumnis.</p>
 			<br>
-			
+
 		</div>
 </div>
 <hr class="my-4">
@@ -202,7 +202,7 @@
 
 
 
-	
+
 
 
 
