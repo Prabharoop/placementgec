@@ -49,7 +49,7 @@
       <img class="d-block w-100" src="{% static 'images/slide1.jpg' %}" alt="First slide">
       <div class="carousel-caption">
       	<h1 class="display-2">Gec Alumni Portal</h1>
-      	<button type="button" class="btn btn-outline-light btn-lg">REGISTER NOW</button>
+		  <a href="{%url 'registration' %}"><button type="button" class="btn btn-outline-light btn-lg" >REGISTER NOW</button></a>
     </div>
     </div>
     <div class="carousel-item">
@@ -106,7 +106,7 @@
 	</div>
 	<div class="row padding">
 	<div class="col-md-12 col-lg-6">
-	<a href="#"><img src="{% static 'images/reg.jpg' %}" class="img-fluid"></a>
+	<a href="{%url 'registration' %}"><img src="{% static 'images/reg.jpg' %}" class="img-fluid"></a>
 	<br>
 	</div>
 	<div class="col-lg-6">
@@ -114,7 +114,7 @@
 		<p class="lead">This Website is aimed to provide a collaberative platform for our alumni to contribute to the transformation of our current students as professionals and therby increasing the placement ratio in our institute.</p>
 			<p class="lead">Alumni Registration portal invites all alumnis of gec palakkad to register and connect with GEC Alumni network. need to write about this website.</p>
 			<br>
-			<h4>To register <a href="#">click here</a></h4>
+			<h4>To register <a href="{%url 'registration' %}">click here</a></h4>
 		</div>
 </div>
 </div>

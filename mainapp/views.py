@@ -6,4 +6,5 @@ from django.views.generic.base import TemplateView
 class home_page(TemplateView):
     template_name = "index.html"
 
-#class regForm():
+def regForm(request):
+    return render(request,'mainapp/register.html', {})
