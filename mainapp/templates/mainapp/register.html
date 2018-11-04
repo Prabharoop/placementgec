@@ -14,17 +14,27 @@
 	<script src="{% static 'js/reg1.js' %}"></script>
 </head>
 <body>
-	<div class="register">
-		<div id="header">ALUMNI REGISTRATION FORM</div><br>
+	<!--<div class="register container-fluid">-->
+		<!--<div id="header">ALUMNI REGISTRATION FORM</div><br></div>-->
+	<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 id="header">ALUMNI REGISTRATION FORM</h1>
+		</div>
+	</div>
+	</div>
+	<div class="container-fluid">
 		<form id="form" method="post">
 			<!-- alumni details -->
 			<div id="heading">
 		 		ALUMNI DETAILS
 			</div><br>
 			<!-- column1 starts -->
-			<div class="col1">
-				<div id="pad1">
-
+			<!--<div class="col1">-->
+			<div class="container-fluid padding">
+				<div class="row text-center padding">
+				<!--<div id="pad1">-->
+					<div class="col-sm-12 col-lg-6">
 				<!-- name and email -->
 			        <input id="input" type="text" name="name" placeholder="Name" required><br><br>
 			        <input id="input" type="Email" name="Email" placeholder="Email" required><br><br>
@@ -47,10 +57,11 @@
 			        </select><br><br>
 			    </div>
 
-			</div>
+
 			<!-- col1 ends and col2 satrts -->
-			<div class="col2">
-				<div id="pad2">
+			<!--<div class="col2">-->
+					<div class="col-sm-12 col-lg-6">
+				<!--<div id="pad2">-->
 
 			        <!-- register no -->
 			        <input id="input" type="text" name="reg.no." placeholder="Reg.No." ><br><br>
@@ -64,7 +75,7 @@
                         <option value="OTHERS">Others</option>
                     </select><br><br>
                     <!-- contact with country code -->
-                    <input id="selection" type="text" name="Contact" placeholder="code" required><
+                    <input id="selection" type="text" name="Contact" placeholder="code" required>
 
                     <input id="cont" type="text" name="Contact" placeholder="contact no." required><br><br>
                     <!-- passout year -->
@@ -74,14 +85,18 @@
 
 
 			</div>
+			</div>
 			<!-- column2 ends -->
             <!-- job details -->
             <div id="heading">
             	JOB DETAILS
             </div>
             <!-- column1 starts -->
-            <div class="col1">
-            	<div id="pad1">
+            <!--<div class="col1">-->
+			<div class="container-fluid padding">
+				<div class="row text-center padding">
+					<div class="col-sm-12 col-lg-6">
+            	<!--<div id="pad1">-->
             	    <!-- current organisation -->
 			        <input id="input" type="text" name="Currentorg" placeholder="Current Organisation" required><br><br>
 			        <!-- job domain -->
@@ -93,15 +108,17 @@
 				        <option  value="ELECTRICAL">ELECTRICAL</option>
                     </select><br><br>
                 </div>
-            </div>
+
             <!-- column1 ends -->
 			<!-- column2 starts -->
-			<div class="col2">
-				<div id="pad2">
+			<!--<div class="col2">-->
+					<div class="col-sm-12 col-lg-6">
+				<!--<div id="pad2">-->
 
 				    <!-- designation  -->
 				    <input id="input" type="text" name="Currentdes" placeholder="Current Designation" required><br><br><br><br><br>
 				</div>
+			</div>
 			</div>
 			<!-- column2 ends -->
 			<!-- higher studies -->
@@ -109,19 +126,23 @@
 				HIGHER STUDIES
 			</div><br>
 			<!-- column1 starts -->
-			<div class="col1">
-				<div id="pad1">
+			<!--<div class="col1">-->
+			<div class="container-fluid padding">
+				<div class="row text-center padding">
+					<div class="col-sm-12 col-lg-6">
+				<!--<div id="pad1">-->
 					<!-- degree -->
 					<input id="input" type="text" name="degree" placeholder="degree" ><br><br>
 
 				    <!-- university -->
                     <input id="input" type="text" name="university" placeholder="university name" ><br><br>
                 </div>
-			</div>
+
 			<!-- column1 ends -->
 			<!-- column2 starts -->
-			<div class="col2">
-				<div id="pad2">
+			<!--<div class="col2">-->
+				<!--<div id="pad2">-->
+					<div class="col-sm-12 col-lg-6">
 					<!-- current status -->
 							<select id="select" >
 							<option  value="CURRENT">CURRENT STATUS</option>
@@ -135,14 +156,17 @@
                 </div>
 
 			</div>
+			</div>
 
 			<!-- column2 ends -->
 			<!-- question starts -->
-			<div class="questions">
+			<div class="container-fluid padding">
+				<div class="col-12">
+			<!--<div class="questions">-->
 			<div class="q1" id="que">
 				1.What did you do in the year immediately after graduating?<br><br>
-				<textarea id="biginp" rows="2" cols="30" ></textarea>
-			</div><br><br>
+				<textarea id="biginp" rows="2" cols="30" ></textarea></div>
+			<br><br>
 			<div class="container" id="que">
 				Do you think that has helped in building your career?<br>
 
@@ -219,6 +243,7 @@
 			    </div>
 
 			</div>
+				</div>
 		</div><br>
 		<!-- question ends -->
 			<div  id="button1">
