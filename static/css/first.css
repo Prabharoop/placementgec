@@ -17,6 +17,7 @@ body{
 	
 .register{
 	/*text-align: center;*/
+	text-transform: uppercase;
 	
 }	
 	
@@ -54,6 +55,7 @@ body{
     color:#FFFFFF;
     font-weight: 1000;
     width: 300px;
+    text-transform: uppercase;
     /*text-align: center;*/
 
 }
