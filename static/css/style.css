@@ -22,7 +22,6 @@ html,body {
   font-size: 1.1em !important;
 }
 .carousel-inner {
-  height: 100%;
   width: 100%;
 }
 .carousel-caption {
@@ -99,7 +98,7 @@ hr.last {
 @media (max-width: 768px) {
   .carousel-caption {
   top: 45%;
-  
+
 }
 .carousel-caption h1 {
   font-size: 300%;
@@ -112,7 +111,7 @@ hr.last {
     font-size: 2.5em;
     padding: 1.2rem;
   }
-  
+
 }
 @media (max-width: 576px) {
   .navbar-brand.mb-0.h1 {
@@ -125,7 +124,7 @@ hr.last {
     padding-top: 2px;
     padding-bottom: 2px;
   }
- 
+
   .navbar-toggler-icon {
   align-content: right;
   font-size: 50%;
@@ -136,7 +135,7 @@ hr.last {
  }
   .carousel-caption {
   top: 30%;
-  
+
   }
   .carousel-caption h1 {
   font-size: 170%;
@@ -220,11 +219,3 @@ Large (lg) devices (desktops, 992px and up)
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
-
-
-
-
-
-
-
-
