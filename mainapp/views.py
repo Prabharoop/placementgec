@@ -1,6 +1,9 @@
 from django.shortcuts import render
 from django.views.generic.base import TemplateView
 from .forms import MainForm
+from django.http import HttpResponseRedirect
+from django.contrib import messages
+
 
 # Create your views here.
 
@@ -13,11 +16,15 @@ def regForm(request):
         if form.is_valid():
             post = form.save(commit=False)
             post.save()
-            form = MainForm()
+            return HttpResponseRedirect('/thanks/')
+
+        else:
+            messages.error(request, "Error")
+            # form = MainForm()
 
     else:
         form = MainForm()
 
 
 
-    return render(request,'mainapp/register.html', {})
+    return render(request,'mainapp/register.html', {'form':form})
