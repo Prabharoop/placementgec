@@ -16,11 +16,7 @@ def regForm(request):
         if form.is_valid():
             post = form.save(commit=False)
             post.save()
-            return HttpResponseRedirect('/thanks/')
-
-        else:
-            messages.error(request, "Error")
-            # form = MainForm()
+            form = MainForm()
 
     else:
         form = MainForm()

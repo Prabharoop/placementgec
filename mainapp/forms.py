@@ -4,4 +4,4 @@ from .models import Placement
 class MainForm(forms.ModelForm):
     class Meta:
         model = Placement
-        fields = ('name', 'reg', 'email','gender','course','number','branch','grad','org','desig','domain','degree','custatus','univname')
+        fields = ('name', 'email','course','number','branch','grad', 'desig','org', 'domain', 'degree', 'custatus', 'univname')

@@ -92,7 +92,6 @@
 
 			        <!-- register no -->
 			        <!-- <input id="input" type="text" name="reg.no." placeholder="Reg.No." ><br><br> -->
-							{{ form.reg|as_crispy_field }}
 			        <!-- gender -->
                     <!-- <select id="select">
 
@@ -102,7 +101,6 @@
                         <option value="FEMALE">Female</option>
                         <option value="OTHERS">Others</option>
                     </select><br><br> -->
-										{{ form.gender|as_crispy_field }}
                     <!-- contact with country code -->
                     <!-- <input id="selection" type="text" name="Contact" placeholder="code" required> -->
 
@@ -130,7 +128,7 @@
             	<!--<div id="pad1">-->
             	    <!-- current organisation -->
 			        <!-- <input id="input" type="text" name="Currentorg" placeholder="Current Organisation" required><br><br> -->
-							{{ form.custatus|as_crispy_field }}
+							{{ form.org|as_crispy_field }}
 			        <!-- job domain -->
 			        <!-- <select id="select" >
 				        <option  value="JOB DOMAIN">Job Domain</option><option  value="opt1"></option>
@@ -140,6 +138,7 @@
 				        <option  value="ELECTRICAL">ELECTRICAL</option>
                     </select><br><br> -->
 										{{ form.domain|as_crispy_field }}
+
                 </div>
 
             <!-- column1 ends -->
@@ -171,7 +170,8 @@
 
 				    <!-- university -->
                     <!-- <input id="input" type="text" name="university" placeholder="university name" ><br><br> -->
-										{{ form.univname|as_crispy_field }}
+
+										{{ form.univname|as_crispy_field}}
                 </div>
 
 			<!-- column1 ends -->
