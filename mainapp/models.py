@@ -37,9 +37,9 @@ status = (
 
 class Placement(models.Model):
     name = models.CharField(max_length = 50)
-    # reg = models.CharField("Registration Number",max_length = 50)
+    reg = models.CharField("Registration Number",max_length = 50, null=True)
     email = models.EmailField(max_length=200)
-    # gender = models.CharField(max_length=20, choices = genders)
+    gender = models.CharField(max_length=20, choices = genders, null=True)
     course = models.CharField(max_length=20, choices = courses)
     number = models.CharField(max_length=20)
     branch = models.CharField(max_length=20, choices = branches)
@@ -59,7 +59,7 @@ class Placement(models.Model):
     # textg = models.TextField(null=True)
 
     def __str__(self):
-        return 'Name: %s Contact Number: %s EMail: %s Course: %s Branch: %s Organisation: %s Designation: %s Graduation: %s Domain: %s Degree: %s Current Status: %s Univaersity Name: %s' % ( self.name,
+        return 'Name: %s Contact Number: %s EMail: %s Course: %s Branch: %s Organisation: %s Designation: %s Graduation: %s Domain: %s Degree: %s Current Status: %s Univaersity Name: %s Registration Number: %s Gender: %s' % ( self.name,
                                                                                                                     self.number,
                                                                                                                     self.email,
                                                                                                                     self.course,
@@ -71,4 +71,6 @@ class Placement(models.Model):
                                                                                                                     self.degree,
                                                                                                                     self.custatus,
                                                                                                                     self.univname,
+                                                                                                                    self.reg,
+                                                                                                                    self.gender,
                                                                                                                 )

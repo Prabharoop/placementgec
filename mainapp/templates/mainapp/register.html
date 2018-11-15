@@ -1,5 +1,7 @@
 {% load static %}
 {% load crispy_forms_tags %}
+{% load widget_tweaks %}
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -59,8 +61,8 @@
 				<!-- name and email -->
 			        <!-- <input id="input" type="text" name="name" placeholder="Name" required><br><br>
 			        <input id="input" type="Email" name="Email" placeholder="Email" required><br><br> -->
-							{{ form.name|as_crispy_field }}
-							{{ form.email|as_crispy_field }}
+							{% render_field form.name class="input" placeholder=form.name.label %}
+							{% render_field form.email class="input" placeholder=form.email.label %}
 			        <!-- course details -->
 			        <!-- <select id="select">
 
@@ -68,9 +70,11 @@
     				    <option value="BTECH">BTECH</option>
                         <option value="MTECH">MTECH</option>
     			    </select><br><br> -->
-
+<!--
 							{{ form.course|as_crispy_field }}
-							{{form.branch|as_crispy_field }}
+							{{form.branch|as_crispy_field }} -->
+								{% render_field form.course class="input" placeholder=course.label %}
+									{% render_field form.branch class="input" placeholder=form.branch.label %}
     			    <!-- branch -->
     			    <!-- <select id="select" >
 
@@ -88,7 +92,7 @@
 			<!-- col1 ends and col2 satrts -->
 			<!--<div class="col2">-->
 					<div class="col-sm-12 col-lg-6">
-				<!--<div id="pad2">-->
+				<!-- <div id="pad2"> -->
 
 			        <!-- register no -->
 			        <!-- <input id="input" type="text" name="reg.no." placeholder="Reg.No." ><br><br> -->
@@ -96,15 +100,20 @@
                     <!-- <select id="select">
 
 
+
+
     				    <option value="GENDER">Gender</option>
     				    <option value="MALE">Male</option>
                         <option value="FEMALE">Female</option>
                         <option value="OTHERS">Others</option>
                     </select><br><br> -->
+
                     <!-- contact with country code -->
                     <!-- <input id="selection" type="text" name="Contact" placeholder="code" required> -->
 
                     <!-- <input id="cont" type="text" name="Contact" placeholder="contact no." required><br><br> -->
+										{{ form.reg|as_crispy_field }}
+										{{ form.gender|as_crispy_field }}
 										{{ form.number|as_crispy_field }}
                     <!-- passout year -->
                     <!-- <input id="input" type="text" name="passout" placeholder="Year of graduation" required><br><br><br><br> -->

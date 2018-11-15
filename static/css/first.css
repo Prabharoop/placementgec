@@ -45,7 +45,7 @@ body{
 #pad2{
 	padding-left: 10%;
 }
-#input{
+.input{
     padding: 5px;
     border-color: #10212E;
     border-radius: 5px;
