@@ -23,4 +23,4 @@ def regForm(request):
 
 
 
-    return render(request,'mainapp/register.html', {'form':form})
+    return render(request,'mainapp/register1.html', {'form':form})
