@@ -2,10 +2,10 @@
 {% load static %}
 {% bootstrap_css %}
 {% bootstrap_javascript %}
-
-
-
-  <form method="post"  class="form">
+<head>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/first-new.css' %}">
+</head>
+  <form method="post"  class="simple-form">
   {% csrf_token %}
   {% bootstrap_form form %}
 
