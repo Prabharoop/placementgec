@@ -1,8 +1,11 @@
 {% load bootstrap3 %}
 {% load static %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
 
 
-  <form method="post"  class="simple-form">
+
+  <form method="post"  class="form">
   {% csrf_token %}
   {% bootstrap_form form %}
 
