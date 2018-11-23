@@ -30,9 +30,10 @@ body{
 }
 .heading{
 	text-align: center;
-	color: #000000;
-	font-size: 40px;
+	color: #140CEE;
+	font-size: 50px;
 	font-weight: 900;
+	font-family: 'Audiowide';
 }
 
 
@@ -44,5 +45,5 @@ body{
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     [class="heading"] {
-        font-size: 20px;
+        font-size: 25px;
     }
