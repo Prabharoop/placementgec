@@ -6,6 +6,9 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'css/first-new.css' %}">
 </head>
   <form method="post"  class="simple-form">
+   <div class="heading">
+    REGISTRATION
+  </div><br><br>
   {% csrf_token %}
   {% bootstrap_form form %}
 

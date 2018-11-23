@@ -1,16 +1,48 @@
 body{
-	background: #c850c0;
+	/*background: #c850c0;
   background: -webkit-linear-gradient(45deg, #4158d0, #c850c0);
   background: -o-linear-gradient(45deg, #4158d0, #c850c0);
   background: -moz-linear-gradient(45deg, #4158d0, #c850c0);
-  background: linear-gradient(45deg, #4158d0, #c850c0);
-}
-.simple-form {
-	width:70%;
-  margin-left: 10%;
-  margin-right: 10%;
+  background: linear-gradient(45deg, #4158d0, #c850c0);*/
+  border-radius: 5px;
+ background-color: #f9f0f1;
+  padding: 20px;
 
 }
-.control-label{
-	color: #ffffff;
+.simple-form {
+	width:40%;
+  /*margin-left: 10%;
+  margin-right: 10%;*/
+  margin: auto;
+
 }
+
+.control-label{
+	color: #000000;
+	font-weight: 700;
+}
+.form-control{
+	font-weight: 500;
+	border:  1px solid grey;
+ 
+
+
+}
+.heading{
+	text-align: center;
+	color: #000000;
+	font-size: 40px;
+	font-weight: 900;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class="simple-form"] {
+        width: 80%;
+    }
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class="heading"] {
+        font-size: 20px;
+    }
