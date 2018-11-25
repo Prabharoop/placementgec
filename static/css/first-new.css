@@ -5,8 +5,13 @@ body{
   background: -moz-linear-gradient(45deg, #4158d0, #c850c0);
   background: linear-gradient(45deg, #4158d0, #c850c0);*/
   border-radius: 5px;
- background-color: #f9f0f1;
+  /*background-color: #ffffff;*/
+ /*background-color: #f9f0f1;*/
+ background-image: url(form.jpg);
   padding: 20px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 
 }
 .simple-form {
@@ -18,32 +23,35 @@ body{
 }
 
 .control-label{
-	color: #000000;
+	color: #ffffff;
 	font-weight: 700;
 }
 .form-control{
 	font-weight: 500;
 	border:  1px solid grey;
+	color: #f9f0f1;
  
 
 
 }
 .heading{
 	text-align: center;
-	color: #140CEE;
+	color: #ffffff;
 	font-size: 50px;
 	font-weight: 900;
 	font-family: 'Audiowide';
+	/*margin: auto;*/
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 700px) {
     /* For mobile phones: */
     [class="simple-form"] {
-        width: 80%;
+        width: 90%;
     }
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
+
+@media only screen and (max-width: 700px) {
+     /*For mobile phones: */
     [class="heading"] {
         font-size: 25px;
     }
