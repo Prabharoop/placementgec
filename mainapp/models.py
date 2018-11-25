@@ -35,6 +35,11 @@ status = (
     ('noto', 'Not Opted'),
 )
 
+testchoice = (
+    (True, 'Yes'),
+    (False, 'No'),
+)
+
 class Placement(models.Model):
     name = models.CharField(max_length = 50)
     reg = models.CharField("Registration Number",max_length = 50, null=True)
@@ -54,7 +59,7 @@ class Placement(models.Model):
     choiceb = models.BooleanField("4.Will you be interested in mentoring some of our students in your domain?",default=False)
     choicec = models.BooleanField("	5.Would you be interested in visiting our campus for a technical talk to our present students?",default=False)
     choiced = models.BooleanField("6.Are you aware of any companies in your domain which are looking for freshers?",default=False)
-    choicee = models.BooleanField("7.Are you in a position(in your company)to help the recruitments in our campus?",default=False)
+    choicee = models.BooleanField("7.Are you in a position(in your company)to help the recruitments in our campus?",default=False, choices = testchoice)
     texta = models.TextField("1.What did you do in the year immediately after graduating?",null=True)
     textb = models.TextField("2.What are the skills/tools fresher must acquaint with before entering your field?",null=True)
     textc = models.TextField("3.What are the topics a fresher must prepare for an interview in your domain?",null=True)
