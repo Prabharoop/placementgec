@@ -154,6 +154,10 @@ hr.last {
   .placement {
   font-size: 150%;
   }
+  .card-img-top {
+  height: 350px;
+  width: 313px;
+}
 }
 
 
