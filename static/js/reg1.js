@@ -1,14 +1,17 @@
 
 $(document).ready(function(){
-	$(".sh1").hide();
-	$(".sh2").hide();
-    $("#show").click(function(){
-        $(".sh1").show();
-        $(".sh2").hide();
+	$("#id_texte").hide();
+	$("#id_textf").hide();
+    $("#id_textg").hide();
+    $("#id_choicee_0").click(function(){
+        $("#id_texte").show();
+        $("#id_textf").hide();
+        $("#id_textg").hide();
 
     });
-    $("#hide").click(function(){
-        $(".sh1").hide();
-        $(".sh2").show();
+    $("#id_choicee_1").click(function(){
+        $("#id_texte").hide();
+        $("#id_textf").show();
+        $("#id_textg").show();
     });
 });
