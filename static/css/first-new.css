@@ -37,7 +37,7 @@ body{
 .form-control {
     font-weight: 500;
     border: 1px solid grey;
-    color: #273c52;
+    color: #000000;
 }
 .heading{
 	text-align: center;
@@ -52,7 +52,7 @@ body{
     min-height: 20px;
     padding-left: 20px;
     margin-bottom: 0;
-    font-weight: 400;
+    font-weight: 700;
     cursor: pointer;
     color: #ffffff;
 }
