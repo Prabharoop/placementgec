@@ -4,7 +4,7 @@ function checkVisibility(){
         var checkbox = el.querySelectorAll(".checkbox");
         if(checkbox.length >0){
             var checkboxElem = el.querySelectorAll("input")[0];
-            if(checkboxElem.id === "id_choicee_0"){
+            if(checkboxElem.id === "id_choiced"){
 
             }
             else if(checkboxElem.checked){
