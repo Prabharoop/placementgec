@@ -91,4 +91,4 @@ class Placement(models.Model):
     #                                                                                                                 self.textf,
     #                                                                                                                 self.texte,
     #                                                                                                                 self.textg,
-    #                                                                                                             )
+    #
