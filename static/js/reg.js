@@ -1,13 +1,12 @@
 
-$(document).ready(function(){
-	$(".sh").hide();
-	$("#shown").click(function(){
-        $(".sh").show();
-        
-
+$(function () {
+        $("#id_choiced").click(function () {
+            if ($(this).is(":checked")) {
+                $("#id_textd").show();
+                $("#AddPassport").hide();
+            } else {
+                $("#id_textd").hide();
+                $("#AddPassport").show();
+            }
+        });
     });
-    $("#hidden").click(function(){
-        $(".sh").hide();
-        
-    });
-});
