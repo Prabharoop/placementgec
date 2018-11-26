@@ -37,7 +37,7 @@ body{
 .form-control{
 	font-weight: 500;
 	border:  1px solid grey;
-	color: #f9f0f1;
+	color: #000000;
 
 
 
@@ -60,7 +60,9 @@ body{
     color: #ffffff;
 }
 
-
+::placeholder {
+  color: red;
+}
 @media only screen and (max-width: 1000px) {
     /* For mobile phones: */
     /*700px*/
