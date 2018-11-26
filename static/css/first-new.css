@@ -21,6 +21,14 @@ body{
   margin: auto;
 
 }
+.checkbox {
+  color: #ffffff;
+  font-weight: bold;
+  
+}
+.radio{
+  color: #ffffff;
+}
 
 .control-label{
 	color: #ffffff;
