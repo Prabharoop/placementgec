@@ -34,13 +34,10 @@ body{
 	color: #ffffff;
 	font-weight: 700;
 }
-.form-control{
-	font-weight: 500;
-	border:  1px solid grey;
-	color: #000000;
-
-
-
+.form-control {
+    font-weight: 500;
+    border: 1px solid grey;
+    color: #273c52;
 }
 .heading{
 	text-align: center;
