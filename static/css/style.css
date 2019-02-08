@@ -51,6 +51,33 @@ html,body {
   height: 350px;
   width: 325px;
 }
+.alumni_interview {
+    background-size: cover;
+    background-color: #e9e9e9;
+}
+.alumni_interview .interview-wrapper{
+  display: block;
+  float: left;}
+.alumni-interview .interview-wrapper h4 {
+    font-size: 20px;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+.alumni-interview .interview-wrapper .interview-desc p {
+    line-height: 2;
+    font-size: 13px;
+    width: 85%;
+}
+.alumni-interview .interview-wrapper .interview-see-story {
+    float: left;
+    margin-top: 50px;
+    display: block;
+}
+.text-light {
+    color: #545454;
+}
 .social a {
   font-size: 2.5em;
   padding: 1em;
@@ -89,6 +116,22 @@ hr.last {
 
 
 /*---Media Queries --*/
+@media (min-width: 992px){
+.alumni_interview {
+    background: url(img/alumni.jpeg) no-repeat;
+    -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+height: 80%;
+
+}
+.alumni_interview .interview-wrapper {
+    padding: 125px 0;
+    
+   
+}
+}
 @media (max-width: 992px) {
   .social a {
     font-size: 4em;
