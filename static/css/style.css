@@ -78,6 +78,26 @@ html,body {
 .text-light {
     color: #545454;
 }
+
+.twitter-stream .twitter-icon {
+    display: block;
+    margin-bottom: 25px;
+}
+.twitter-stream .twitter-icon .fa {
+    font-size: 40px;
+}
+.fa-twitter {
+     display: block;
+    margin-bottom: 25px;
+    color: #f7ca18;
+    font-size: 40px;
+}
+.twitter-stream .twitter-content .twitter-desc p {
+    font-size: 25px;
+    letter-spacing: 3px;
+    line-height: 2;
+}
+
 .social a {
   font-size: 2.5em;
   padding: 1em;
@@ -153,6 +173,12 @@ height: 80%;
  .social a {
     font-size: 2.5em;
     padding: 1.2rem;
+  }
+  .twitter-stream{
+    padding: 35px 0;
+  }
+  .twitter-stream .twitter-content .twitter-desc p {
+    font-size: 18px !important;
   }
 
 }
