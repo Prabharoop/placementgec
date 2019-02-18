@@ -18,7 +18,7 @@
 }
 .carousel-inner img {
       width: 100%;
-      height: 100%;
+      height: 70%;
 }
 footer {
   background-color: #3f3f3f;
@@ -69,6 +69,11 @@ hr.last {
   padding-top: 2px;
   padding-bottom: 2px;
  }
+ .carousel-inner img {
+      width: 100%;
+      height: 40%;
+    }
+  }
  .btn:focus, .btn:active, button:focus, button:active {
   outline: none !important;
   box-shadow: none !important;
