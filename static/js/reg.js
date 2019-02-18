@@ -13,7 +13,7 @@ $(function () {
 
 $( function () {
         $("#id_choicee_0").click(function () {
-            if($(this).is(":clicked")) {
+            if($(this).is(":checked")) {
                 $("#id_textf").show();
                 $("#id_textg").show();
                 $("#AddPassport").hide();
@@ -22,7 +22,7 @@ $( function () {
 
         });
         $("#id_choicee_1").click(function () {
-            if($(this).is(":clicked")) {
+            if($(this).is(":checked")) {
                 $("#id_textf").hide();
                 $("#id_textg").hide();
                 $("#AddPassport").show();
