@@ -28,3 +28,7 @@ def regForm(request):
 def invento(request):
 
     return render(request,'invento/invento.html',{})
+
+def daksha(request):
+
+    return render(request, 'daksha/daksha.html',{})

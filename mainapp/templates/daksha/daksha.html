@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+{% load static %}
+
 <html lang="en">
 <head>
   <title>DAKSHA</title>
@@ -8,9 +9,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="daksha.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/daksha.css' %}">
   <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
-  <script type="text/javascript" src="daksha.js"></script>
+  <script type="text/javascript" src="{% static 'js/daksha.js' %}"></script>
 </head>
 <body>
 
@@ -67,19 +68,19 @@
   <!-- The slideshow -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="daksha1.jpeg" alt="daksha1" width="1100" height="500">
+      <img src="{% static 'images/daksha1.jpeg' %}" alt="daksha1" width="1100" height="500">
     </div>
     <div class="carousel-item">
-      <img src="daksha2.jpeg" alt="daksha2" width="1100" height="500">
+      <img src="{% static 'images/daksha2.jpeg' %}" alt="daksha2" width="1100" height="500">
     </div>
     <div class="carousel-item">
-      <img src="daksha3.jpeg" alt="daksha3" width="1100" height="500">
+      <img src="{% static 'images/daksha3.jpeg' %}" alt="daksha3" width="1100" height="500">
     </div>
     <div class="carousel-item">
-      <img src="daksha4.jpeg" alt="daksha4" width="1100" height="500">
+      <img src="{% static 'images/daksha4.jpeg' %}" alt="daksha4" width="1100" height="500">
     </div>
     <div class="carousel-item">
-      <img src="daksha5.jpeg" alt="daksha5" width="1100" height="500">
+      <img src="{% static 'images/daksha5.jpeg' %}" alt="daksha5" width="1100" height="500">
     </div>
   </div>
   
@@ -101,7 +102,7 @@
      </p>
     </div>
     <div class="col-sm-6" >
-      <img src="daksha15.jpeg" alt="daksha15" class="responsive" width="600" height="400"> 
+      <img src="{% static 'images/daksha15.jpeg' %}" alt="daksha15" class="responsive" width="600" height="400"> 
     </div>
   </div>
 </div>
@@ -110,47 +111,47 @@
     <div class="row">
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
-                   data-image="daksha07.jpg"
+                   data-image="{% static 'images/daksha07.jpg' %}"
                    data-target="#image-gallery">
                     <img class="img-thumbnail"
-                         src="daksha07.jpg"
+                         src="{% static 'images/daksha07.jpg' %}"
                          alt="Another alt text">
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
-                   data-image="daksha10.jpg"
+                   data-image="{% static 'images/daksha10.jpg' %}"
                    data-target="#image-gallery">
                     <img class="img-thumbnail"
-                         src="daksha10.jpg"
+                         src="{% static 'images/daksha10.jpg' %}"
                          alt="Another alt text">
                 </a>
             </div>
 
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
-                   data-image="daksha8.jpg"
+                   data-image="{% static 'images/daksha8.jpg' %}"
                    data-target="#image-gallery">
                     <img class="img-thumbnail"
-                         src="daksha8.jpg"
+                         src="{% static 'images/daksha8.jpg' %}"
                          alt="Another alt text">
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" 
-                   data-image="daksha9.jpg"
+                   data-image="{% static 'images/daksha9.jpg' %}"
                    data-target="#image-gallery">
                     <img class="img-thumbnail"
-                         src="daksha9.jpg"
+                         src="{% static 'images/daksha9.jpg' %}"
                          alt="Another alt text">
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" 
-                   data-image="daksha13.jpeg"
+                   data-image="{% static 'images/daksha13.jpg' %}"
                    data-target="#image-gallery">
                     <img class="img-thumbnail"
-                         src="daksha13.jpeg"
+                         src="{% static 'images/daksha13.jpeg' %}"
                          alt="Another alt text">
                 </a>
             </div>
@@ -159,28 +160,28 @@
 
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" 
-                   data-image="daksha14.jpeg"
+                   data-image="{% static 'images/daksha14.jpg' %}"
                    data-target="#image-gallery">
                     <img class="img-thumbnail"
-                         src="daksha14.jpeg"
+                         src="{% static 'images/daksha14.jpeg' %}"
                          alt="Another alt text">
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" 
-                   data-image="daksha6.jpg"
+                   data-image="{% static 'images/daksha6.jpg' %}"
                    data-target="#image-gallery">
                     <img class="img-thumbnail"
-                         src="daksha6.jpg"
+                         src="{% static 'images/daksha6.jpg' %}"
                          alt="Another alt text">
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" 
-                   data-image="daksha15.jpeg"
+                   data-image="{% static 'images/daksha15.jpg' %}"
                    data-target="#image-gallery">
                     <img class="img-thumbnail"
-                         src="daksha15.jpeg"
+                         src="{% static 'images/daksha15.jpeg' %}"
                          alt="Another alt text">
                 </a>
             </div>
@@ -238,7 +239,7 @@
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
 
-    <script src="js/index.js"></script>
+    
 
 
 </body>
