@@ -36,3 +36,8 @@ def daksha(request):
 def achieve(request):
 
     return render(request, 'achievement/achieve.html',{})
+
+def story(request):
+    
+    return render(request, 'stories/Alumni_Stories.html',{})
+
