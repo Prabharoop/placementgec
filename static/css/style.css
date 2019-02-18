@@ -118,7 +118,7 @@ hr.last {
 /*---Media Queries --*/
 @media (min-width: 992px){
 .alumni_interview {
-    background: url(img/alumni.jpeg) no-repeat;
+    background: url(alumni.jpeg) no-repeat;
     -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -128,8 +128,8 @@ height: 80%;
 }
 .alumni_interview .interview-wrapper {
     padding: 125px 0;
-    
-   
+
+
 }
 }
 @media (max-width: 992px) {
