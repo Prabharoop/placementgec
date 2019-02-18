@@ -6,9 +6,11 @@ class MainForm(forms.ModelForm):
 
     class Meta:
         model = Placement
-        fields = ('name', 'email','course','reg','gender','number','branch','grad', 'desig','org', 'domain','texta','choicea','textb','textc','choiceb','choicec','choiced','textd','choicee','texte','textf','textg')
+        fields = ('name', 'email','course','reg','gender','number','branch','grad', 'desig','org', 'domain','texta','choicea','textb','textc','choiceb','choicec','choiced','textd','choicee','textf','textg')
         widgets = {
-            'choicee':forms.RadioSelect()
+            'choicea':forms.RadioSelect(),
+            'choicee':forms.RadioSelect(),
+            
         }
 
          # 'degree', 'custatus', 'univname', to be added
