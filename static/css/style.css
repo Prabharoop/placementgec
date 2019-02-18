@@ -78,6 +78,71 @@ html,body {
 .text-light {
     color: #545454;
 }
+
+.twitter-stream .twitter-icon {
+    display: block;
+    margin-bottom: 25px;
+}
+.twitter-stream .twitter-icon .fa {
+    font-size: 40px;
+}
+.fa-twitter {
+     display: block;
+    margin-bottom: 25px;
+    color: #f7ca18;
+    font-size: 40px;
+}
+.twitter-stream .twitter-content .twitter-desc p {
+    font-size: 25px;
+    letter-spacing: 3px;
+    line-height: 2;
+}
+.pre{
+  text-align: center;
+  overflow: hidden;
+}
+
+.instagram-feed-user{
+  width: 100%;
+  float: left;
+  background-color: #1a265c;
+  margin-top: -5px;
+  height: 60px;
+  line-height: 57px;
+  
+}
+.instagram-feed-user .user-wrapper{
+  font-size: 14px;
+  width: 140px;
+  margin: 0 auto;
+}
+
+.newsletter{
+  padding: 135px 0 115px;
+  background: url(img/mac.png) no-repeat;
+  background-size: cover;
+  height: 70%;
+}
+.newsletter .newsletter-wrapper {
+  display: block;
+}
+.newsletter .newsletter-title {
+  margin-bottom: 30px;
+  color: #fff;
+}
+.newsletter .newsletter-title h2 {
+  margin-bottom: 20px;
+}
+.newsletter .newsletter-title p {
+  font-size: 20px;
+  color: #fff;
+}
+.fa-instagram {
+  font-size: 30px;
+  color: #fff;
+  margin-top: 15px;
+}
+
 .social a {
   font-size: 2.5em;
   padding: 1em;
@@ -153,6 +218,15 @@ height: 80%;
  .social a {
     font-size: 2.5em;
     padding: 1.2rem;
+  }
+  .twitter-stream{
+    padding: 35px 0;
+  }
+  .twitter-stream .twitter-content .twitter-desc p {
+    font-size: 18px !important;
+  }
+  .newsletter .newsletter-title p {
+    font-size: 30%;
   }
 
 }
