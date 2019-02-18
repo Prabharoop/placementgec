@@ -6,4 +6,5 @@ urlpatterns = [
     path('form', views.regForm , name="registration"),
     path('invento',views.invento, name = "Invento"),
     path('daksha',views.daksha, name = "Daksha"),
+    path('achievements',views.achieve, name = "Achievements"),
 ]

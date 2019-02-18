@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{% load static %}
 <html >
 <head>
   <meta charset="UTF-8">
@@ -14,7 +14,7 @@
   
   
   
-      <link rel="stylesheet" href="css/achieve.css">
+      <link rel="stylesheet" href="{% static 'css/achieve.css' %}">
 
   
 </head>
@@ -30,22 +30,22 @@
   <div class="collapse navbar-collapse" id="navbarResponsive">
     <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-      <a class="nav-link" href="#">Home</a>
+      <a class="nav-link" href="/">Home</a>
       </li>
       <li class="nav-item">
-      <a class="nav-link" href="#About">About</a>
+      <a class="nav-link" href="/#About">About</a>
       </li>
       <li class="nav-item">
-      <a class="nav-link" href="#achievements">Achievements</a>
+      <a class="nav-link" href="{%url 'Achievements' %}">Achievements</a>
       </li>
        <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Events
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Daksha</a>
-          <a class="dropdown-item" href="#">Invento</a>
-          <a class="dropdown-item" href="#">Eterno</a>
+          <a class="dropdown-item" href="{%url 'Daksha' %}">Daksha</a>
+          <a class="dropdown-item" href="{%url 'Invento' %}">Invento</a>
+        
 
          
       </li>
@@ -61,7 +61,7 @@
   <div class="cards">
 
   <div class="card">
-    <img class="imgs" src="lapeesh.jpg"  height="300">
+    <img class="imgs" src="{% static 'images/lapeesh.jpg' %}"  height="300">
     <div class="card-title">
       <a href="#" class="toggle-info btn">
         <span class="left"></span>
@@ -85,7 +85,7 @@
   </div>
 
     <div class="card">
-    <img class="imgs" src="aron.jpg"  height="300">
+    <img class="imgs" src="{% static 'images/aron.jpg' %}"  height="300">
     <div class="card-title">
       <a href="#" class="toggle-info btn">
         <span class="left"></span>
@@ -109,7 +109,7 @@
   </div>
 
   <div class="card">
-    <img class="imgs" src="achu.jpg"  height="300">
+    <img class="imgs" src="{% static 'images/achu.jpg' %}"  height="300">
     <div class="card-title">
       <a href="#" class="toggle-info btn">
         <span class="left"></span>
@@ -134,7 +134,7 @@
   </div>
 
   <div class="card">
-    <img class="imgs" src="AKHIL.jpg"  height="300">
+    <img class="imgs" src="{% static 'images/AKHIL.jpg' %}"  height="300">
     <div class="card-title">
       <a href="#" class="toggle-info btn">
         <span class="left"></span>
@@ -158,7 +158,7 @@
   </div>
 
   <div class="card">
-    <img class="imgs" src="sreenath.jpeg"  height="300">
+    <img class="imgs" src="{% static 'images/sreenath.jpeg' %}"  height="300">
     <div class="card-title">
       <a href="#" class="toggle-info btn">
         <span class="left"></span>
@@ -182,7 +182,7 @@
   </div>
 
   <div class="card">
-    <img class="imgs" src="suhail.jpeg" >
+    <img class="imgs" src="{% static 'images/suhail.jpeg' %}" >
     <div class="card-title">
       <a href="#" class="toggle-info btn">
         <span class="left"></span>
@@ -206,7 +206,7 @@
   </div>
 
   <div class="card">
-    <img class="imgs" src="anakha.jpeg" >
+    <img class="imgs" src="{% static 'images/anakha.jpeg' %}" >
     <div class="card-title">
       <a href="#" class="toggle-info btn">
         <span class="left"></span>
@@ -230,7 +230,7 @@
   </div>
   
   <div class="card">
-    <img class="imgs" src="rosni.jpg" >
+    <img class="imgs" src="{% static 'images/rosni.jpg' %}" >
     <div class="card-title">
       <a href="#" class="toggle-info btn">
         <span class="left"></span>
@@ -254,7 +254,7 @@
   </div>
 
   <div class="card">
-    <img class="imgs" src="suja.jpeg" >
+    <img class="imgs" src="{% static 'images/suja.jpeg' %}" >
     <div class="card-title">
       <a href="#" class="toggle-info btn">
         <span class="left"></span>
@@ -301,7 +301,7 @@
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
 
-    <script src="js/achieve.js"></script>
+    <script src="{% static 'js/achieve.js' %}"></script>
 
 </body>
 </html>

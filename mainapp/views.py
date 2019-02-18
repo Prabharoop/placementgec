@@ -32,3 +32,7 @@ def invento(request):
 def daksha(request):
 
     return render(request, 'daksha/daksha.html',{})
+
+def achieve(request):
+
+    return render(request, 'achievement/achieve.html',{})
