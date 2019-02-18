@@ -24,3 +24,7 @@ def regForm(request):
 
 
     return render(request,'mainapp/register1.html', {'form':form})
+
+def invento(request):
+
+    return render(request,'invento/invento.html',{})

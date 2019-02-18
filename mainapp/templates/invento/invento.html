@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+{% load static %}
+
 <html lang="en">
 <head>
   <title>INVENTO</title>
@@ -8,7 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="invento.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/invento.css' %}">
   <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
 </head>
 <body>
@@ -64,19 +65,19 @@
   <!-- The slideshow -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="invento1.jpeg" alt="invento1" width="1100" height="500">
+      <img src="{% static 'images/invento1.jpeg' %}" alt="invento1" width="1100" height="500">
     </div>
     <div class="carousel-item">
-      <img src="invento2.jpeg" alt="invento2" width="1100" height="500">
+      <img src="{% static 'images/invento2.jpeg' %}" alt="invento2" width="1100" height="500">
     </div>
     <div class="carousel-item">
-      <img src="invento3.jpeg" alt="invento3" width="1100" height="500">
+      <img src="{% static 'images/invento3.jpeg' %}" alt="invento3" width="1100" height="500">
     </div>
     <div class="carousel-item">
-      <img src="invento4.jpeg" alt="invento4" width="1100" height="500">
+      <img src="{% static 'images/invento4.jpeg' %}" alt="invento4" width="1100" height="500">
     </div>
     <div class="carousel-item">
-      <img src="invento5.jpeg" alt="invento5" width="1100" height="500">
+      <img src="{% static 'images/invento5.jpeg' %}" alt="invento5" width="1100" height="500">
     </div>
   </div>
   
@@ -98,7 +99,7 @@
      </p>
     </div>
     <div class="col-sm-6" >
-      <img src="invento6.jpg" alt="Nature" class="responsive" width="600" height="400"> 
+      <img src="{% static 'images/invento6.jpg' %}" alt="Nature" class="responsive" width="600" height="400"> 
     </div>
   </div>
 </div>
@@ -124,8 +125,6 @@
 </footer>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
-
-    <script src="js/index.js"></script>
 
 
 </body>
