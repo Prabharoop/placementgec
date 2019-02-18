@@ -41,3 +41,6 @@ def story(request):
     
     return render(request, 'stories/Alumni_Stories.html',{})
 
+def Story(request):
+
+    return render(request, 'stories/Alumni_Stories1.html',{})

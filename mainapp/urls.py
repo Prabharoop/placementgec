@@ -8,4 +8,5 @@ urlpatterns = [
     path('daksha',views.daksha, name = "Daksha"),
     path('achievements',views.achieve, name = "Achievements"),
     path('stories',views.story, name = "Story"),
+    path('stories01',views.Story, name = "Story01"),
 ]
