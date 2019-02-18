@@ -60,6 +60,11 @@ body{
 ::placeholder {
   color: red;
 }
+
+.form-group:nth-last-child(3) .form-group:nth-last-child(2) .form-group:nth-last-child(1) {
+  display: none;
+}
+
 @media only screen and (max-width: 1000px) {
     /* For mobile phones: */
     /*700px*/
