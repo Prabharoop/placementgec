@@ -42,7 +42,7 @@ testchoice = (
 
 class Placement(models.Model):
     name = models.CharField(max_length = 50)
-    reg = models.CharField("Registration Number",max_length = 50, null=True)
+    reg = models.CharField("Registration Number",max_length = 50, null=True,blank = True)
     email = models.EmailField(max_length=200)
     gender = models.CharField(max_length=20, choices = genders, null=True)
     course = models.CharField(max_length=20, choices = courses)
